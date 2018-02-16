@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView txt_result,txt_hint;
@@ -51,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
             txt_result.setText("0");
 
         }else if(cheakOnclickTag.equals("del")){
-
             backOnLatter();
-
+        }else if(cheakOnclickTag.equals("00")){
+            Toast.makeText(getApplicationContext(),"هنوز این دکمه ساپورت نمیشه",Toast.LENGTH_SHORT).show();
         }
     }
 
